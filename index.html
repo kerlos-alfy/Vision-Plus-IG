@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Vision Plus — THE UNSEEN. An interactive nine-post Instagram campaign presentation, with original campaign artwork, three carousels, five static posts and one playable reel.">
+  <meta property="og:title" content="Vision Plus — THE UNSEEN | Interactive Campaign">
+  <meta property="og:description" content="Look again. A nine-post cinematic Instagram campaign experience.">
+  <title>Vision Plus | THE UNSEEN — Interactive Instagram Experience</title>
+  <link rel="icon" href="assets/avatar.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<div class="ambient" aria-hidden="true"><div class="ambient-light"></div><div class="ambient-grain"></div></div>
+<header class="topbar">
+  <div class="brand-top" dir="ltr"><img src="assets/avatar.webp" alt="Vision Plus" class="brand-logo"><div><span class="brand-line">VISION PLUS</span><span class="brand-sub">THE UNSEEN / CREATIVE CAMPAIGN</span></div></div>
+  <div class="top-right"><span class="live-marker"><i></i> CLIENT PRESENTATION</span><span class="header-count">09 <span>/ POSTS</span></span></div>
+</header>
+<main class="workspace">
+  <section class="presentation" aria-label="تفاصيل الحملة">
+    <div class="intro" id="intro">
+      <p class="overline"><span class="gold-rule"></span> THE UNSEEN — CAMPAIGN 001</p>
+      <h1>THE <em>UNSEEN.</em><br><small>LOOK AGAIN.</small></h1>
+      <p class="hero-ar">تسع منشورات. ثلاث مراحل. هوية واحدة.</p>
+      <p class="intro-copy">برزنتيشن تفاعلي لحملة إطلاق <b>Vision Plus</b> لأول مرة في <b>Palm Jumeirah Mall</b> — من أول تلميح بصري لحد بوست الإعلان عن الافتتاح.</p>
+      <div class="meta-pills" dir="ltr"><span>09 POSTS</span><i></i><span>01 REEL</span><i></i><span>03 CAROUSELS</span><i></i><span>05 STILLS</span></div>
+    </div>
+    <div class="campaign-controls">
+      <div><p class="small-label">CAMPAIGN WALKTHROUGH</p><h2>شوف الحملة وهي بتتحكي</h2><p class="muted control-copy">اختار أي منشور لعرض التصميم والفكرة والهدف والكابشن والـCTA. الكاروسيل فيه شرح لكل سلايد، وتقدر تتفرج على الريل داخل الموبايل. الجدول نسبي من D−14 إلى D−1.</p></div>
+      <div class="action-row"><button class="gold-button" id="play-sequence" type="button"><span class="play-glyph">▶</span><span>شغّل قصة الحملة</span></button><button class="line-button" id="show-all" type="button">عرض التسعة</button></div>
+      <div class="sequence-progress"><div class="progress-track"><i id="progress-fill"></i></div><div class="progress-ends"><span id="progress-status">9 / 9 POSTS VISIBLE</span><span id="active-date">D−14 → D−1</span></div></div>
+    </div>
+    <div class="chapter-head"><span>01 / THE STORY</span><b>POSTING SEQUENCE</b></div>
+    <div class="timeline" id="timeline" aria-label="التسع منشورات حسب ترتيب النشر"></div>
+    <div class="chapter-head detail-chapter"><span>02 / CREATIVE BREAKDOWN</span><b>SELECTED POST</b></div><div class="insight" id="insight" aria-live="polite"></div>
+    <div class="footer-note"><span>✦</span><p>Creative concept preview — التفاعلات داخل الصفحة للعرض التجريبي فقط، وليست تفاعلات على حساب إنستجرام الحقيقي.</p></div>
+  </section>
+  <section class="device-section" aria-label="محاكي إنستجرام التفاعلي">
+    <div class="device-caption"><span class="caption-cross">✳</span><span>EXPLORE THE CAMPAIGN</span><span class="device-hint">CLICK · SWIPE · PLAY</span></div>
+    <div class="phone-halo" aria-hidden="true"></div>
+    <div class="phone" id="phone">
+      <div class="phone-camera" aria-hidden="true"></div>
+      <div class="phone-ui" dir="ltr">
+        <div class="phone-status"><span>9:41</span><div class="status-icons"><svg viewBox="0 0 25 13" width="25" height="13"><path d="M1 10h3V6H1zM6 10h3V4H6zM11 10h3V1h-3z" fill="currentColor"/><path d="M17 5q3-3 6 0M18.5 7q1.5-1.5 3 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span class="battery"><i></i></span></div></div>
+        <div class="phone-screen" id="screen"></div>
+        <nav class="ig-nav" id="ig-nav" aria-label="Instagram navigation"></nav>
+        <div class="home-indicator" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="stage-footer" dir="ltr"><span>SIMULATED INSTAGRAM VIEW</span><span>VISION PLUS / 2026</span></div>
+  </section>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
